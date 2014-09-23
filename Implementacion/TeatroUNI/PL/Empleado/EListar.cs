@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PL
+namespace PL.Empleado
 {
-    public partial class Principal : Form
+    public partial class EListar : Form
     {
-        public Principal()
+        public EListar()
         {
             InitializeComponent();
         }

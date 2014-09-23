@@ -44,16 +44,97 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Principal.cs">
+    <Compile Include="autenticacion\login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Principal.Designer.cs">
-      <DependentUpon>Principal.cs</DependentUpon>
+    <Compile Include="autenticacion\login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cajero\CPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cajero\CPrincipal.Designer.cs">
+      <DependentUpon>CPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente\CActualizar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cliente\CActualizar.Designer.cs">
+      <DependentUpon>CActualizar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente\CAgregar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cliente\CAgregar.Designer.cs">
+      <DependentUpon>CAgregar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente\CEliminar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cliente\CEliminar.Designer.cs">
+      <DependentUpon>CEliminar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente\CListar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cliente\CListar.Designer.cs">
+      <DependentUpon>CListar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Empleado\EActualizar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Empleado\EActualizar.Designer.cs">
+      <DependentUpon>EActualizar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Empleado\EAgregar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Empleado\EAgregar.Designer.cs">
+      <DependentUpon>EAgregar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Empleado\EEliminar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Empleado\EEliminar.Designer.cs">
+      <DependentUpon>EEliminar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Empleado\EListar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Empleado\EListar.Designer.cs">
+      <DependentUpon>EListar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\Vender.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas\Vender.Designer.cs">
+      <DependentUpon>Vender.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Principal.resx">
-      <DependentUpon>Principal.cs</DependentUpon>
+    <Compile Include="Supervisor\SPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supervisor\SPrincipal.Designer.cs">
+      <DependentUpon>SPrincipal.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="autenticacion\login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cajero\CPrincipal.resx">
+      <DependentUpon>CPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cliente\CAgregar.resx">
+      <DependentUpon>CAgregar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Empleado\EAgregar.resx">
+      <DependentUpon>EAgregar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Empleado\EListar.resx">
+      <DependentUpon>EListar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas\Vender.resx">
+      <DependentUpon>Vender.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -64,6 +145,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Supervisor\SPrincipal.resx">
+      <DependentUpon>SPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -89,6 +173,9 @@
       <Project>{892541ac-bcb6-41fc-a496-36121f33bed0}</Project>
       <Name>ModelamientoDB</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Evento\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
