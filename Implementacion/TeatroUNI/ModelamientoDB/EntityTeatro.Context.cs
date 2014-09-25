@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DL
+namespace ModelamientoDB
 {
     using System;
     using System.Data.Entity;

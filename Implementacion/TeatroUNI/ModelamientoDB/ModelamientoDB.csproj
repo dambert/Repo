@@ -30,8 +30,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -39,7 +46,81 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ASIENTO.cs">
+      <DependentUpon>EntityTeatro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ASIENTO_EVENTO.cs">
+      <DependentUpon>EntityTeatro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CLIENTE.cs">
+      <DependentUpon>EntityTeatro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EMPLEADO.cs">
+      <DependentUpon>EntityTeatro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityTeatro.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EntityTeatro.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityTeatro.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EntityTeatro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityTeatro.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EntityTeatro.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="ESTADOASIENTO.cs">
+      <DependentUpon>EntityTeatro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EVENTO.cs">
+      <DependentUpon>EntityTeatro.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sysdiagrams.cs">
+      <DependentUpon>EntityTeatro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TIPOEMPLEADO.cs">
+      <DependentUpon>EntityTeatro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TIPO_ASIENTO.cs">
+      <DependentUpon>EntityTeatro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="USUARIO.cs">
+      <DependentUpon>EntityTeatro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VENTA.cs">
+      <DependentUpon>EntityTeatro.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="EntityTeatro.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>EntityTeatro.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="EntityTeatro.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>EntityTeatro.edmx</DependentUpon>
+      <LastGenOutput>EntityTeatro.Context.cs</LastGenOutput>
+    </None>
+    <None Include="EntityTeatro.edmx.diagram">
+      <DependentUpon>EntityTeatro.edmx</DependentUpon>
+    </None>
+    <None Include="EntityTeatro.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>EntityTeatro.edmx</DependentUpon>
+      <LastGenOutput>EntityTeatro.cs</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

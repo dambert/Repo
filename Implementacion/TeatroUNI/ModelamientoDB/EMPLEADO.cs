@@ -7,22 +7,25 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DL
+namespace ModelamientoDB
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class CLIENTE
+    public partial class EMPLEADO
     {
-        public CLIENTE()
+        public EMPLEADO()
         {
             this.VENTA = new HashSet<VENTA>();
         }
     
-        public int CCliente { get; set; }
-        public string RUC { get; set; }
+        public string NUsername { get; set; }
+        public string NPassword { get; set; }
+        public int CEmpleado { get; set; }
+        public Nullable<int> CTipoEmpleado { get; set; }
     
         public virtual ICollection<VENTA> VENTA { get; set; }
+        public virtual TIPOEMPLEADO TIPOEMPLEADO { get; set; }
         public virtual USUARIO USUARIO { get; set; }
     }
 }

@@ -7,24 +7,25 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DL
+namespace ModelamientoDB
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class EVENTO
+    public partial class ASIENTO
     {
-        public EVENTO()
+        public ASIENTO()
         {
             this.ASIENTO_EVENTO = new HashSet<ASIENTO_EVENTO>();
             this.VENTA = new HashSet<VENTA>();
         }
     
-        public string NEvento { get; set; }
-        public int CEvento { get; set; }
-        public System.DateTime DFechaEvento { get; set; }
-        public string TDescripcion { get; set; }
+        public int CASiento { get; set; }
+        public string Letra { get; set; }
+        public int Numero { get; set; }
+        public Nullable<int> CTipoAsiento { get; set; }
     
+        public virtual TIPO_ASIENTO TIPO_ASIENTO { get; set; }
         public virtual ICollection<ASIENTO_EVENTO> ASIENTO_EVENTO { get; set; }
         public virtual ICollection<VENTA> VENTA { get; set; }
     }

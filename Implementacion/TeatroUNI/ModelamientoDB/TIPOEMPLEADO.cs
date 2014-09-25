@@ -7,21 +7,21 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DL
+namespace ModelamientoDB
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class ESTADOASIENTO
+    public partial class TIPOEMPLEADO
     {
-        public ESTADOASIENTO()
+        public TIPOEMPLEADO()
         {
-            this.ASIENTO_EVENTO = new HashSet<ASIENTO_EVENTO>();
+            this.EMPLEADO = new HashSet<EMPLEADO>();
         }
     
-        public int CEstadoAsiento { get; set; }
-        public string NEstadoAsiento { get; set; }
+        public int CTipoEmpleado { get; set; }
+        public string NTipoEmpleado { get; set; }
     
-        public virtual ICollection<ASIENTO_EVENTO> ASIENTO_EVENTO { get; set; }
+        public virtual ICollection<EMPLEADO> EMPLEADO { get; set; }
     }
 }

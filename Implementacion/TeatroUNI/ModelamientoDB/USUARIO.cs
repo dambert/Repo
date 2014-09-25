@@ -7,19 +7,21 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DL
+namespace ModelamientoDB
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class ASIENTO_EVENTO
+    public partial class USUARIO
     {
-        public int CASiento { get; set; }
-        public int CEvento { get; set; }
-        public Nullable<int> CEstadoAsiento { get; set; }
+        public int CUsuario { get; set; }
+        public string NNombres { get; set; }
+        public string NAPellidos { get; set; }
+        public string DNI { get; set; }
+        public Nullable<int> Telefono { get; set; }
+        public string TDireccion { get; set; }
     
-        public virtual ASIENTO ASIENTO { get; set; }
-        public virtual EVENTO EVENTO { get; set; }
-        public virtual ESTADOASIENTO ESTADOASIENTO { get; set; }
+        public virtual CLIENTE CLIENTE { get; set; }
+        public virtual EMPLEADO EMPLEADO { get; set; }
     }
 }
