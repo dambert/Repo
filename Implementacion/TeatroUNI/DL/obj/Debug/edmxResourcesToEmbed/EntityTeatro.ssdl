@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DBTeatroModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="DBTeatroModelStoreContainer">
+    <EntitySet Name="ASIENTO" EntityType="DBTeatroModel.Store.ASIENTO" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ASIENTO_EVENTO" EntityType="DBTeatroModel.Store.ASIENTO_EVENTO" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CLIENTE" EntityType="DBTeatroModel.Store.CLIENTE" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="DETALLE_VENTA" EntityType="DBTeatroModel.Store.DETALLE_VENTA" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EMPLEADO" EntityType="DBTeatroModel.Store.EMPLEADO" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ESTADOASIENTO" EntityType="DBTeatroModel.Store.ESTADOASIENTO" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EVENTO" EntityType="DBTeatroModel.Store.EVENTO" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="sysdiagrams" EntityType="DBTeatroModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TIPO_ASIENTO" EntityType="DBTeatroModel.Store.TIPO_ASIENTO" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TIPOEMPLEADO" EntityType="DBTeatroModel.Store.TIPOEMPLEADO" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="USUARIO" EntityType="DBTeatroModel.Store.USUARIO" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="VENTA" EntityType="DBTeatroModel.Store.VENTA" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="R_15" Association="DBTeatroModel.Store.R_15">
+      <End Role="VENTA" EntitySet="VENTA" />
+      <End Role="DETALLE_VENTA" EntitySet="DETALLE_VENTA" />
+    </AssociationSet>
+    <AssociationSet Name="R_20" Association="DBTeatroModel.Store.R_20">
+      <End Role="EVENTO" EntitySet="EVENTO" />
+      <End Role="VENTA" EntitySet="VENTA" />
+    </AssociationSet>
+    <AssociationSet Name="R_23" Association="DBTeatroModel.Store.R_23">
+      <End Role="ASIENTO" EntitySet="ASIENTO" />
+      <End Role="DETALLE_VENTA" EntitySet="DETALLE_VENTA" />
+    </AssociationSet>
+    <AssociationSet Name="R_24" Association="DBTeatroModel.Store.R_24">
+      <End Role="TIPO_ASIENTO" EntitySet="TIPO_ASIENTO" />
+      <End Role="ASIENTO" EntitySet="ASIENTO" />
+    </AssociationSet>
+    <AssociationSet Name="R_25" Association="DBTeatroModel.Store.R_25">
+      <End Role="CLIENTE" EntitySet="CLIENTE" />
+      <End Role="VENTA" EntitySet="VENTA" />
+    </AssociationSet>
+    <AssociationSet Name="R_26" Association="DBTeatroModel.Store.R_26">
+      <End Role="EMPLEADO" EntitySet="EMPLEADO" />
+      <End Role="VENTA" EntitySet="VENTA" />
+    </AssociationSet>
+    <AssociationSet Name="R_27" Association="DBTeatroModel.Store.R_27">
+      <End Role="TIPOEMPLEADO" EntitySet="TIPOEMPLEADO" />
+      <End Role="EMPLEADO" EntitySet="EMPLEADO" />
+    </AssociationSet>
+    <AssociationSet Name="R_29" Association="DBTeatroModel.Store.R_29">
+      <End Role="ASIENTO" EntitySet="ASIENTO" />
+      <End Role="ASIENTO_EVENTO" EntitySet="ASIENTO_EVENTO" />
+    </AssociationSet>
+    <AssociationSet Name="R_30" Association="DBTeatroModel.Store.R_30">
+      <End Role="EVENTO" EntitySet="EVENTO" />
+      <End Role="ASIENTO_EVENTO" EntitySet="ASIENTO_EVENTO" />
+    </AssociationSet>
+    <AssociationSet Name="R_31" Association="DBTeatroModel.Store.R_31">
+      <End Role="ESTADOASIENTO" EntitySet="ESTADOASIENTO" />
+      <End Role="ASIENTO_EVENTO" EntitySet="ASIENTO_EVENTO" />
+    </AssociationSet>
+    <AssociationSet Name="R_8" Association="DBTeatroModel.Store.R_8">
+      <End Role="USUARIO" EntitySet="USUARIO" />
+      <End Role="EMPLEADO" EntitySet="EMPLEADO" />
+    </AssociationSet>
+    <AssociationSet Name="R_9" Association="DBTeatroModel.Store.R_9">
+      <End Role="USUARIO" EntitySet="USUARIO" />
+      <End Role="CLIENTE" EntitySet="CLIENTE" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="ASIENTO">
+    <Key>
+      <PropertyRef Name="CASiento" />
+    </Key>
+    <Property Name="CASiento" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Letra" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="Numero" Type="int" Nullable="false" />
+    <Property Name="CTipoAsiento" Type="int" />
+  </EntityType>
+  <EntityType Name="ASIENTO_EVENTO">
+    <Key>
+      <PropertyRef Name="CASiento" />
+      <PropertyRef Name="CEvento" />
+    </Key>
+    <Property Name="CASiento" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CEvento" Type="int" Nullable="false" />
+    <Property Name="CEstadoAsiento" Type="int" />
+  </EntityType>
+  <EntityType Name="CLIENTE">
+    <Key>
+      <PropertyRef Name="CCliente" />
+    </Key>
+    <Property Name="CCliente" Type="int" Nullable="false" />
+    <Property Name="RUC" Type="char" MaxLength="18" />
+  </EntityType>
+  <EntityType Name="DETALLE_VENTA">
+    <Key>
+      <PropertyRef Name="CVenta" />
+      <PropertyRef Name="CASiento" />
+    </Key>
+    <Property Name="CVenta" Type="int" Nullable="false" />
+    <Property Name="CASiento" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EMPLEADO">
+    <Key>
+      <PropertyRef Name="CEmpleado" />
+    </Key>
+    <Property Name="NUsername" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="NPassword" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="CEmpleado" Type="int" Nullable="false" />
+    <Property Name="CTipoEmpleado" Type="int" />
+  </EntityType>
+  <EntityType Name="ESTADOASIENTO">
+    <Key>
+      <PropertyRef Name="CEstadoAsiento" />
+    </Key>
+    <Property Name="CEstadoAsiento" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="NEstadoAsiento" Type="varchar" Nullable="false" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="EVENTO">
+    <Key>
+      <PropertyRef Name="CEvento" />
+    </Key>
+    <Property Name="NEvento" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="CEvento" Type="int" Nullable="false" />
+    <Property Name="DFechaEvento" Type="datetime" Nullable="false" />
+    <Property Name="TDescripcion" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="TIPO_ASIENTO">
+    <Key>
+      <PropertyRef Name="CTipoAsiento" />
+    </Key>
+    <Property Name="CTipoAsiento" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="NTipoAsiento" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="Precio" Type="float" Nullable="false" />
+    <Property Name="NColor" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="TDescripcion" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="TIPOEMPLEADO">
+    <Key>
+      <PropertyRef Name="CTipoEmpleado" />
+    </Key>
+    <Property Name="CTipoEmpleado" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="NTipoEmpleado" Type="varchar" Nullable="false" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="USUARIO">
+    <Key>
+      <PropertyRef Name="CUsuario" />
+    </Key>
+    <Property Name="CUsuario" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="NNombres" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="NAPellidos" Type="varchar" MaxLength="100" />
+    <Property Name="DNI" Type="varchar" Nullable="false" MaxLength="8" />
+    <Property Name="Telefono" Type="int" />
+    <Property Name="TDireccion" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="VENTA">
+    <Key>
+      <PropertyRef Name="CVenta" />
+    </Key>
+    <Property Name="CVenta" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="MontoTotal" Type="float" Nullable="false" />
+    <Property Name="DFechaVenta" Type="datetime" Nullable="false" />
+    <Property Name="CUsuario" Type="int" />
+    <Property Name="CEmpleado" Type="int" Nullable="false" />
+    <Property Name="CCliente" Type="int" />
+    <Property Name="CEvento" Type="int" Nullable="false" />
+    <Property Name="FBoleta" Type="char" MaxLength="1" />
+    <Property Name="FFactura" Type="char" MaxLength="1" />
+    <Property Name="RUC" Type="char" MaxLength="18" />
+  </EntityType>
+  <Association Name="R_15">
+    <End Role="VENTA" Type="DBTeatroModel.Store.VENTA" Multiplicity="1" />
+    <End Role="DETALLE_VENTA" Type="DBTeatroModel.Store.DETALLE_VENTA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="VENTA">
+        <PropertyRef Name="CVenta" />
+      </Principal>
+      <Dependent Role="DETALLE_VENTA">
+        <PropertyRef Name="CVenta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_20">
+    <End Role="EVENTO" Type="DBTeatroModel.Store.EVENTO" Multiplicity="1" />
+    <End Role="VENTA" Type="DBTeatroModel.Store.VENTA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EVENTO">
+        <PropertyRef Name="CEvento" />
+      </Principal>
+      <Dependent Role="VENTA">
+        <PropertyRef Name="CEvento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_23">
+    <End Role="ASIENTO" Type="DBTeatroModel.Store.ASIENTO" Multiplicity="1" />
+    <End Role="DETALLE_VENTA" Type="DBTeatroModel.Store.DETALLE_VENTA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ASIENTO">
+        <PropertyRef Name="CASiento" />
+      </Principal>
+      <Dependent Role="DETALLE_VENTA">
+        <PropertyRef Name="CASiento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_24">
+    <End Role="TIPO_ASIENTO" Type="DBTeatroModel.Store.TIPO_ASIENTO" Multiplicity="0..1" />
+    <End Role="ASIENTO" Type="DBTeatroModel.Store.ASIENTO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TIPO_ASIENTO">
+        <PropertyRef Name="CTipoAsiento" />
+      </Principal>
+      <Dependent Role="ASIENTO">
+        <PropertyRef Name="CTipoAsiento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_25">
+    <End Role="CLIENTE" Type="DBTeatroModel.Store.CLIENTE" Multiplicity="0..1" />
+    <End Role="VENTA" Type="DBTeatroModel.Store.VENTA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CLIENTE">
+        <PropertyRef Name="CCliente" />
+      </Principal>
+      <Dependent Role="VENTA">
+        <PropertyRef Name="CCliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_26">
+    <End Role="EMPLEADO" Type="DBTeatroModel.Store.EMPLEADO" Multiplicity="1" />
+    <End Role="VENTA" Type="DBTeatroModel.Store.VENTA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EMPLEADO">
+        <PropertyRef Name="CEmpleado" />
+      </Principal>
+      <Dependent Role="VENTA">
+        <PropertyRef Name="CEmpleado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_27">
+    <End Role="TIPOEMPLEADO" Type="DBTeatroModel.Store.TIPOEMPLEADO" Multiplicity="0..1" />
+    <End Role="EMPLEADO" Type="DBTeatroModel.Store.EMPLEADO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TIPOEMPLEADO">
+        <PropertyRef Name="CTipoEmpleado" />
+      </Principal>
+      <Dependent Role="EMPLEADO">
+        <PropertyRef Name="CTipoEmpleado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_29">
+    <End Role="ASIENTO" Type="DBTeatroModel.Store.ASIENTO" Multiplicity="1" />
+    <End Role="ASIENTO_EVENTO" Type="DBTeatroModel.Store.ASIENTO_EVENTO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ASIENTO">
+        <PropertyRef Name="CASiento" />
+      </Principal>
+      <Dependent Role="ASIENTO_EVENTO">
+        <PropertyRef Name="CASiento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_30">
+    <End Role="EVENTO" Type="DBTeatroModel.Store.EVENTO" Multiplicity="1" />
+    <End Role="ASIENTO_EVENTO" Type="DBTeatroModel.Store.ASIENTO_EVENTO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EVENTO">
+        <PropertyRef Name="CEvento" />
+      </Principal>
+      <Dependent Role="ASIENTO_EVENTO">
+        <PropertyRef Name="CEvento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_31">
+    <End Role="ESTADOASIENTO" Type="DBTeatroModel.Store.ESTADOASIENTO" Multiplicity="0..1" />
+    <End Role="ASIENTO_EVENTO" Type="DBTeatroModel.Store.ASIENTO_EVENTO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ESTADOASIENTO">
+        <PropertyRef Name="CEstadoAsiento" />
+      </Principal>
+      <Dependent Role="ASIENTO_EVENTO">
+        <PropertyRef Name="CEstadoAsiento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_8">
+    <End Role="USUARIO" Type="DBTeatroModel.Store.USUARIO" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="EMPLEADO" Type="DBTeatroModel.Store.EMPLEADO" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="USUARIO">
+        <PropertyRef Name="CUsuario" />
+      </Principal>
+      <Dependent Role="EMPLEADO">
+        <PropertyRef Name="CEmpleado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_9">
+    <End Role="USUARIO" Type="DBTeatroModel.Store.USUARIO" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="CLIENTE" Type="DBTeatroModel.Store.CLIENTE" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="USUARIO">
+        <PropertyRef Name="CUsuario" />
+      </Principal>
+      <Dependent Role="CLIENTE">
+        <PropertyRef Name="CCliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

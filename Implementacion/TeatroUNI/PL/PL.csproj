@@ -169,8 +169,8 @@
       <Project>{1e7eb62b-3ad2-487b-b507-645dca67e6cf}</Project>
       <Name>BL</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ModelamientoDB\ModelamientoDB.csproj">
-      <Project>{892541ac-bcb6-41fc-a496-36121f33bed0}</Project>
+    <ProjectReference Include="..\DL\ModelamientoDB.csproj">
+      <Project>{29402979-f693-4338-afec-5ba156e3be46}</Project>
       <Name>ModelamientoDB</Name>
     </ProjectReference>
   </ItemGroup>

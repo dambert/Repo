@@ -1,15 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
-MinimumVisualStudioVersion = 10.0.40219.1
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PL", "PL\PL.csproj", "{053DAB67-BB04-4568-87DB-D8CAE0539946}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BL", "BL\BL.csproj", "{1E7EB62B-3AD2-487B-B507-645DCA67E6CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DL", "DL\DL.csproj", "{29402979-F693-4338-AFEC-5BA156E3BE46}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelamientoDB", "DL\ModelamientoDB.csproj", "{29402979-F693-4338-AFEC-5BA156E3BE46}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelamientoDB", "ModelamientoDB\ModelamientoDB.csproj", "{892541AC-BCB6-41FC-A496-36121F33BED0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DL", "ModelamientoDB\DL.csproj", "{892541AC-BCB6-41FC-A496-36121F33BED0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

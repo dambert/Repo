@@ -1,1 +1,12 @@
 C:\Users\AIP\Documents\GitHub\Repo\Implementacion\TeatroUNI\PL\bin\Debug\PL.exe.config
+C:\Users\AIP\Desktop\Repo\Implementacion\TeatroUNI\PL\bin\Debug\PL.exe.config
+C:\Users\AIP\Desktop\Repo\Implementacion\TeatroUNI\PL\obj\Debug\PL.csprojResolveAssemblyReference.cache
+C:\Users\AIP\Desktop\Repo\Implementacion\TeatroUNI\PL\obj\Debug\PL.autenticacion.login.resources
+C:\Users\AIP\Desktop\Repo\Implementacion\TeatroUNI\PL\obj\Debug\PL.Cajero.CPrincipal.resources
+C:\Users\AIP\Desktop\Repo\Implementacion\TeatroUNI\PL\obj\Debug\PL.Cliente.CAgregar.resources
+C:\Users\AIP\Desktop\Repo\Implementacion\TeatroUNI\PL\obj\Debug\PL.Empleado.EAgregar.resources
+C:\Users\AIP\Desktop\Repo\Implementacion\TeatroUNI\PL\obj\Debug\PL.Empleado.EListar.resources
+C:\Users\AIP\Desktop\Repo\Implementacion\TeatroUNI\PL\obj\Debug\PL.Cajero.Vender.resources
+C:\Users\AIP\Desktop\Repo\Implementacion\TeatroUNI\PL\obj\Debug\PL.Properties.Resources.resources
+C:\Users\AIP\Desktop\Repo\Implementacion\TeatroUNI\PL\obj\Debug\PL.Supervisor.SPrincipal.resources
+C:\Users\AIP\Desktop\Repo\Implementacion\TeatroUNI\PL\obj\Debug\PL.csproj.GenerateResource.Cache

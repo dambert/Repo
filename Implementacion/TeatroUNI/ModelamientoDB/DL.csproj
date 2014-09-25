@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1E7EB62B-3AD2-487B-B507-645DCA67E6CF}</ProjectGuid>
+    <ProjectGuid>{892541AC-BCB6-41FC-A496-36121F33BED0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BL</RootNamespace>
-    <AssemblyName>BL</AssemblyName>
+    <RootNamespace>ModelamientoDB</RootNamespace>
+    <AssemblyName>ModelamientoDB</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,16 +40,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\DL\ModelamientoDB.csproj">
-      <Project>{29402979-f693-4338-afec-5ba156e3be46}</Project>
-      <Name>ModelamientoDB</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ModelamientoDB\DL.csproj">
-      <Project>{892541ac-bcb6-41fc-a496-36121f33bed0}</Project>
-      <Name>DL</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

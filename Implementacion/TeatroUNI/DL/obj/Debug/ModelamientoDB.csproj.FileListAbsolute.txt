@@ -1,0 +1,10 @@
+C:\Users\AIP\Desktop\Repo\Implementacion\TeatroUNI\DL\bin\Debug\DL.dll.config
+C:\Users\AIP\Desktop\Repo\Implementacion\TeatroUNI\DL\bin\Debug\DL.dll
+C:\Users\AIP\Desktop\Repo\Implementacion\TeatroUNI\DL\bin\Debug\DL.pdb
+C:\Users\AIP\Desktop\Repo\Implementacion\TeatroUNI\DL\bin\Debug\EntityFramework.dll
+C:\Users\AIP\Desktop\Repo\Implementacion\TeatroUNI\DL\bin\Debug\ModelamientoDB.dll
+C:\Users\AIP\Desktop\Repo\Implementacion\TeatroUNI\DL\bin\Debug\ModelamientoDB.pdb
+C:\Users\AIP\Desktop\Repo\Implementacion\TeatroUNI\DL\bin\Debug\EntityFramework.xml
+C:\Users\AIP\Desktop\Repo\Implementacion\TeatroUNI\DL\obj\Debug\ModelamientoDB.csprojResolveAssemblyReference.cache
+C:\Users\AIP\Desktop\Repo\Implementacion\TeatroUNI\DL\obj\Debug\DL.dll
+C:\Users\AIP\Desktop\Repo\Implementacion\TeatroUNI\DL\obj\Debug\DL.pdb

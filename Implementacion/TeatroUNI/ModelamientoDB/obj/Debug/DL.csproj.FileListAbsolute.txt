@@ -1,0 +1,5 @@
+C:\Users\AIP\Desktop\Repo\Implementacion\TeatroUNI\ModelamientoDB\bin\Debug\ModelamientoDB.dll
+C:\Users\AIP\Desktop\Repo\Implementacion\TeatroUNI\ModelamientoDB\bin\Debug\ModelamientoDB.pdb
+C:\Users\AIP\Desktop\Repo\Implementacion\TeatroUNI\ModelamientoDB\obj\Debug\DL.csprojResolveAssemblyReference.cache
+C:\Users\AIP\Desktop\Repo\Implementacion\TeatroUNI\ModelamientoDB\obj\Debug\ModelamientoDB.dll
+C:\Users\AIP\Desktop\Repo\Implementacion\TeatroUNI\ModelamientoDB\obj\Debug\ModelamientoDB.pdb
