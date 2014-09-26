@@ -1,5 +1,0 @@
-C:\Users\AIP\Documents\GitHub\Repo\Implementacion\TeatroUNI\ModelamientoDB\bin\Debug\ModelamientoDB.dll
-C:\Users\AIP\Documents\GitHub\Repo\Implementacion\TeatroUNI\ModelamientoDB\bin\Debug\ModelamientoDB.pdb
-C:\Users\AIP\Documents\GitHub\Repo\Implementacion\TeatroUNI\ModelamientoDB\obj\Debug\ModelamientoDB.csprojResolveAssemblyReference.cache
-C:\Users\AIP\Documents\GitHub\Repo\Implementacion\TeatroUNI\ModelamientoDB\obj\Debug\ModelamientoDB.dll
-C:\Users\AIP\Documents\GitHub\Repo\Implementacion\TeatroUNI\ModelamientoDB\obj\Debug\ModelamientoDB.pdb

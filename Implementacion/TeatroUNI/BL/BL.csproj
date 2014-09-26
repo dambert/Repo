@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="asas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -46,9 +47,9 @@
       <Project>{29402979-f693-4338-afec-5ba156e3be46}</Project>
       <Name>DL</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ModelamientoDB\ModelamientoDB.csproj">
-      <Project>{892541ac-bcb6-41fc-a496-36121f33bed0}</Project>
-      <Name>ModelamientoDB</Name>
+    <ProjectReference Include="..\MappingDB\MappingDB.csproj">
+      <Project>{d7dedb3a-eaea-4f2e-ba87-7912df04b983}</Project>
+      <Name>MappingDB</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
