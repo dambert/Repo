@@ -97,5 +97,25 @@ namespace DL
 
 
         }
+
+        public EMPLEADO Autenticar(String Username,String Password)
+        {
+            try
+            {
+                ContextoDB ct = new ContextoDB();
+                EMPLEADO EMPLEADO = (from x in ct.EMPLEADO
+                                     where x.NUsername == Username && x.NPassword == Password
+                                     select x).SingleOrDefault();
+
+                return EMPLEADO;
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+
+
+        }
     }
 }

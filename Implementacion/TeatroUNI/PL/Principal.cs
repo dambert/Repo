@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using BL;
 namespace PL
 {
     public partial class Principal : Form
@@ -41,13 +41,13 @@ namespace PL
             #endregion
 
             #region Usuario
-            textBox1.Text = "";
-            textBox1.MaxLength = 10;
+            txtUsuario.Text = "";
+            txtUsuario.MaxLength = 10;
             #endregion
             #region Contraseña
-            textBox2.Text = "";
-            textBox2.PasswordChar = '*';
-            textBox2.MaxLength = 14;
+            txtPassword.Text = "";
+            txtPassword.PasswordChar = '*';
+            txtPassword.MaxLength = 14;
             #endregion
 
             //UPCTicket nuevoHilo = new UPCTicket();
@@ -65,7 +65,7 @@ namespace PL
 
             #region Alerta
 
-            if (textBox1.Text == "" || textBox2.Text == "")
+            if (txtUsuario.Text == "" || txtPassword.Text == "")
             {
                 //Muestra mensaje de error
                 MessageBox.Show("Introduce todos los datos porfavor", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -76,9 +76,19 @@ namespace PL
 
             else 
             {
-                this.Hide();
+
+                LoginController lc = new LoginController();
+                bool Validacion = lc.AutenticarUsuario(this.txtUsuario.Text, this.txtPassword.Text);
+
+                if(Validacion==false)
+                {
+                    MessageBox.Show("Clave incorrecta");
+
+                }
+                else { 
                 UPCTicket upc = new UPCTicket();
                 upc.ShowDialog();
+                }
 
                 
 

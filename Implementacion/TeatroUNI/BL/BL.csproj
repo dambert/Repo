@@ -39,7 +39,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="asas.cs" />
+    <Compile Include="busAsiento.cs" />
+    <Compile Include="busAsiento_Evento.cs" />
+    <Compile Include="busCliente.cs" />
+    <Compile Include="busDetalle_Venta.cs" />
+    <Compile Include="busEmpleado.cs" />
+    <Compile Include="busEstado_Asiento.cs" />
+    <Compile Include="busEvento.cs" />
+    <Compile Include="busTipo_Asiento.cs" />
+    <Compile Include="busTipo_Empleado.cs" />
+    <Compile Include="busUsuario.cs" />
+    <Compile Include="busVenta.cs" />
+    <Compile Include="LoginController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -48,7 +59,7 @@
       <Name>DL</Name>
     </ProjectReference>
     <ProjectReference Include="..\MappingDB\MappingDB.csproj">
-      <Project>{d7dedb3a-eaea-4f2e-ba87-7912df04b983}</Project>
+      <Project>{2362c950-1c67-4ed2-a20d-0e9febf6e7b7}</Project>
       <Name>MappingDB</Name>
     </ProjectReference>
   </ItemGroup>

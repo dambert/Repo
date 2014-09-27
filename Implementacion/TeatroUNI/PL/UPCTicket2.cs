@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PL.Cajero
+namespace PL
 {
-    public partial class CPrincipal : Form
+    public partial class UPCTicket2 : Form
     {
-        public CPrincipal()
+        public UPCTicket2()
         {
             InitializeComponent();
         }

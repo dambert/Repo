@@ -62,7 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MappingDB\MappingDB.csproj">
-      <Project>{d7dedb3a-eaea-4f2e-ba87-7912df04b983}</Project>
+      <Project>{2362c950-1c67-4ed2-a20d-0e9febf6e7b7}</Project>
       <Name>MappingDB</Name>
     </ProjectReference>
   </ItemGroup>

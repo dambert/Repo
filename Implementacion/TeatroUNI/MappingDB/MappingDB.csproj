@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D7DEDB3A-EAEA-4F2E-BA87-7912DF04B983}</ProjectGuid>
+    <ProjectGuid>{2362C950-1C67-4ED2-A20D-0E9FEBF6E7B7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>MappingDB</RootNamespace>
@@ -40,10 +40,8 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Drawing" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
-    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -55,6 +53,7 @@
     <Compile Include="ASIENTO_EVENTO.cs" />
     <Compile Include="CLIENTE.cs" />
     <Compile Include="ContextoDB.cs" />
+    <Compile Include="DETALLE_VENTA.cs" />
     <Compile Include="EMPLEADO.cs" />
     <Compile Include="ESTADOASIENTO.cs" />
     <Compile Include="EVENTO.cs" />

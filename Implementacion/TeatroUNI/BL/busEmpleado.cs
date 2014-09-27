@@ -72,5 +72,19 @@ namespace BL
                 throw e;
             }
         }
+        public EMPLEADO Autenticar(String Username, String Password)
+        {
+            try
+            {
+                return new DatEmpleado().Autenticar(Username, Password);
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+
+
+        }
     }
 }

@@ -40,7 +40,7 @@ namespace BL
         {
             try
             {
-                new DatEstado_Asiento().Eliminar();
+                new DatEstado_Asiento().Eliminar(CEstadoAsiento);
             }
             catch (Exception ex)
             {
