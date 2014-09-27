@@ -11,8 +11,8 @@ namespace MappingDB
     {
         public ASIENTO()
         {
+            DETALLE_VENTA = new HashSet<DETALLE_VENTA>();
             ASIENTO_EVENTO = new HashSet<ASIENTO_EVENTO>();
-            VENTA = new HashSet<VENTA>();
         }
 
         [Key]
@@ -26,10 +26,10 @@ namespace MappingDB
 
         public int? CTipoAsiento { get; set; }
 
+        public virtual ICollection<DETALLE_VENTA> DETALLE_VENTA { get; set; }
+
         public virtual TIPO_ASIENTO TIPO_ASIENTO { get; set; }
 
         public virtual ICollection<ASIENTO_EVENTO> ASIENTO_EVENTO { get; set; }
-
-        public virtual ICollection<VENTA> VENTA { get; set; }
     }
 }

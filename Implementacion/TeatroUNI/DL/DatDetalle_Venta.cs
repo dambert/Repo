@@ -7,20 +7,19 @@ using MappingDB;
 namespace DL
 {
     public class DatDetalle_Venta
-    {/*
-        public int Insertar(DETALLE_VENTA P)
+    {
+        public void Insertar(DETALLE_VENTA P)
         {
             try
             {
                 ContextoDB ct = new ContextoDB();
                 ct.DETALLE_VENTA.Add(P);
                 ct.SaveChanges();
-                return P.CDETALLE_VENTA;
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
-
-                throw ex;
+                
+                throw e; 
             }
 
         }
@@ -29,7 +28,9 @@ namespace DL
             try
             {
                 ContextoDB ct = new ContextoDB();
-                DETALLE_VENTA DETALLE_VENTA = ct.DETALLE_VENTA.Where(x => x.CDETALLE_VENTA == P.CDETALLE_VENTA).SingleOrDefault();
+                DETALLE_VENTA DETALLE_VENTA = (from x in ct.DETALLE_VENTA
+                                               where x.CASiento == P.CASiento && x.CVenta == P.CVenta
+                                               select x).FirstOrDefault();
 
                 if (DETALLE_VENTA != null)
                 {
@@ -37,29 +38,31 @@ namespace DL
                     ct.SaveChanges();
                 }
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
-
-                throw ex;
+                
+                throw e;
             }
 
         }
-        public void Eliminar(int CDETALLE_VENTA)
+        public void Eliminar(int CAsiento, int CVenta)
         {
             try
             {
                 ContextoDB ct = new ContextoDB();
-                DETALLE_VENTA DETALLE_VENTA = ct.DETALLE_VENTA.Where(x => x.CDETALLE_VENTA == CDETALLE_VENTA).SingleOrDefault();
+                DETALLE_VENTA DETALLE_VENTA = (from x in ct.DETALLE_VENTA
+                                               where x.CASiento == CAsiento && x.CVenta == CVenta
+                                               select x).FirstOrDefault();
                 if (DETALLE_VENTA != null)
                 {
                     ct.DETALLE_VENTA.Remove(DETALLE_VENTA);
                     ct.SaveChanges();
                 }
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
-
-                throw ex;
+                
+                throw e;
             }
 
         }
@@ -71,31 +74,33 @@ namespace DL
 
                 return ct.DETALLE_VENTA.ToList();
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
-
-                throw ex;
+                
+                throw e;
             }
 
 
 
         }
-        public DETALLE_VENTA GetById(int CDETALLE_VENTA)
+        public DETALLE_VENTA GetById(int CAsiento, int CVenta)
         {
             try
             {
                 ContextoDB ct = new ContextoDB();
-                DETALLE_VENTA DETALLE_VENTA = ct.DETALLE_VENTA.Where(x => x.CDETALLE_VENTA == CDETALLE_VENTA).SingleOrDefault();
+                DETALLE_VENTA DETALLE_VENTA = (from x in ct.DETALLE_VENTA
+                                               where x.CASiento == CAsiento && x.CVenta == CVenta
+                                               select x).FirstOrDefault();
 
                 return DETALLE_VENTA;
+
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
-
-                throw ex;
+                
+                throw e;
             }
 
-
-        }*/
+        }
     }
 }

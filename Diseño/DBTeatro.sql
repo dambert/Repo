@@ -137,7 +137,8 @@ go
 CREATE TABLE [DETALLE_VENTA]
 ( 
 	[CVenta]             integer  NOT NULL ,
-	[CASiento]           integer  NOT NULL 
+	[CASiento]           integer  NOT NULL ,
+	[TDescripcion]		 varchar(255)
 )
 go
 

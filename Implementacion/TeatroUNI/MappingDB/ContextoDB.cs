@@ -15,6 +15,7 @@ namespace MappingDB
         public virtual DbSet<ASIENTO> ASIENTO { get; set; }
         public virtual DbSet<ASIENTO_EVENTO> ASIENTO_EVENTO { get; set; }
         public virtual DbSet<CLIENTE> CLIENTE { get; set; }
+        public virtual DbSet<DETALLE_VENTA> DETALLE_VENTA { get; set; }
         public virtual DbSet<EMPLEADO> EMPLEADO { get; set; }
         public virtual DbSet<ESTADOASIENTO> ESTADOASIENTO { get; set; }
         public virtual DbSet<EVENTO> EVENTO { get; set; }
@@ -31,6 +32,11 @@ namespace MappingDB
                 .IsUnicode(false);
 
             modelBuilder.Entity<ASIENTO>()
+                .HasMany(e => e.DETALLE_VENTA)
+                .WithRequired(e => e.ASIENTO)
+                .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<ASIENTO>()
                 .HasMany(e => e.ASIENTO_EVENTO)
                 .WithRequired(e => e.ASIENTO)
                 .WillCascadeOnDelete(false);
@@ -38,6 +44,10 @@ namespace MappingDB
             modelBuilder.Entity<CLIENTE>()
                 .Property(e => e.RUC)
                 .IsFixedLength()
+                .IsUnicode(false);
+
+            modelBuilder.Entity<DETALLE_VENTA>()
+                .Property(e => e.TDescripcion)
                 .IsUnicode(false);
 
             modelBuilder.Entity<EMPLEADO>()
@@ -133,9 +143,9 @@ namespace MappingDB
                 .IsUnicode(false);
 
             modelBuilder.Entity<VENTA>()
-                .HasMany(e => e.ASIENTO)
-                .WithMany(e => e.VENTA)
-                .Map(m => m.ToTable("DETALLE_VENTA").MapLeftKey("CVenta").MapRightKey("CASiento"));
+                .HasMany(e => e.DETALLE_VENTA)
+                .WithRequired(e => e.VENTA)
+                .WillCascadeOnDelete(false);
         }
     }
 }
