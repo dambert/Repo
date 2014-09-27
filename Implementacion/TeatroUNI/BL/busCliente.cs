@@ -9,12 +9,12 @@ namespace BL
 {
     public class busCliente
     {
-        public int Insertar(CLIENTE P)
+        public int Insertar(CLIENTE P, USUARIO P2)
         {
 
             try
             {
-                return new DatCliente().Insertar(P);
+                return new DatCliente().Insertar(P,P2);
             }
             catch (Exception e)
             {
@@ -22,12 +22,12 @@ namespace BL
                 throw e;
             }
         }
-        public void Actualizar(CLIENTE P)
+        public void Actualizar(CLIENTE P, USUARIO P2)
         {
 
             try
             {
-                 new DatCliente().Actualizar(P);
+                 new DatCliente().Actualizar(P,P2);
             }
             catch (Exception e)
             {
@@ -47,7 +47,7 @@ namespace BL
                 throw e;
             }
         }
-        public List<CLIENTE> Leer()
+        public dynamic Leer()
         {
             try
             {
@@ -60,7 +60,7 @@ namespace BL
             }
 
         }
-        public CLIENTE GetById(int CCliente)
+        public dynamic GetById(int CCliente)
         {
             try
             {

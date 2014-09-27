@@ -8,11 +8,13 @@ namespace DL
 {
     public class DatEmpleado
     {
-        public int Insertar(EMPLEADO P)
+        public int Insertar(EMPLEADO P,USUARIO P2)
         {
             try
             {
                 ContextoDB ct = new ContextoDB();
+                ct.USUARIO.Add(P2);
+                P.CEmpleado = P2.CUsuario;
                 ct.EMPLEADO.Add(P);
                 ct.SaveChanges();
                 return P.CEmpleado;
@@ -24,16 +26,18 @@ namespace DL
             }
 
         }
-        public void Actualizar(EMPLEADO P)
+        public void Actualizar(EMPLEADO P, USUARIO P2)
         {
             try
             {
                 ContextoDB ct = new ContextoDB();
-                EMPLEADO EMPLEADO = ct.EMPLEADO.Where(x => x.CEmpleado == P.CEmpleado).SingleOrDefault();
-
-                if (EMPLEADO != null)
+                USUARIO USUARIO = ct.USUARIO.Where(x => x.CUsuario == P2.CUsuario).SingleOrDefault();
+                EMPLEADO EMPLEADO = ct.EMPLEADO.Where(x => x.CEmpleado == P.CEmpleado).SingleOrDefault();                
+                if (EMPLEADO != null && USUARIO!=null)
                 {
+                   
                     ct.Entry(EMPLEADO).CurrentValues.SetValues(P);
+                    ct.Entry(USUARIO).CurrentValues.SetValues(P2);
                     ct.SaveChanges();
                 }
             }
@@ -50,9 +54,13 @@ namespace DL
             {
                 ContextoDB ct = new ContextoDB();
                 EMPLEADO EMPLEADO = ct.EMPLEADO.Where(x => x.CEmpleado == CEmpleado).SingleOrDefault();
-                if (EMPLEADO != null)
+                USUARIO USUARIO = ct.USUARIO.Where(x => x.CUsuario == CEmpleado).SingleOrDefault();
+                if (EMPLEADO != null && USUARIO != null)
                 {
+                   
                     ct.EMPLEADO.Remove(EMPLEADO);
+                    ct.USUARIO.Remove(USUARIO);
+                   
                     ct.SaveChanges();
                 }
             }
@@ -63,13 +71,15 @@ namespace DL
             }
 
         }
-        public List<EMPLEADO> Leer()
+        public dynamic Leer()
         {
             try
             {
                 ContextoDB ct = new ContextoDB();
-
-                return ct.EMPLEADO.ToList();
+                var empleado = (from s in ct.USUARIO
+                                join sa in ct.EMPLEADO on s.CUsuario equals sa.CEmpleado                               
+                                select s).ToList();
+                return empleado;
             }
             catch (Exception ex)
             {
@@ -78,16 +88,18 @@ namespace DL
             }
 
 
-
         }
-        public EMPLEADO GetById(int CEmpleado)
+        public dynamic GetById(int CEmpleado)
         {
             try
             {
                 ContextoDB ct = new ContextoDB();
-                EMPLEADO EMPLEADO = ct.EMPLEADO.Where(x => x.CEmpleado == CEmpleado).SingleOrDefault();
+                var empleado = (from s in ct.USUARIO
+                                join sa in ct.EMPLEADO on s.CUsuario equals sa.CEmpleado
+                                where s.CUsuario==CEmpleado
+                                select s).SingleOrDefault();
 
-                return EMPLEADO;
+                return empleado;
             }
             catch (Exception ex)
             {

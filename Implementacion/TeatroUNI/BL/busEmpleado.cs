@@ -9,11 +9,11 @@ namespace BL
 {
     public class busEmpleado
     {
-        public int Insertar(EMPLEADO P)
+        public int Insertar(EMPLEADO P, USUARIO P2)
         {
             try
             {
-                return new DatEmpleado().Insertar(P);
+                return new DatEmpleado().Insertar(P,P2);
             }
             catch (Exception e)
             {
@@ -22,11 +22,11 @@ namespace BL
             }
 
         }
-        public void Actualizar(EMPLEADO P)
+        public void Actualizar(EMPLEADO P, USUARIO P2)
         {
             try
             {
-                new DatEmpleado().Actualizar(P);
+                new DatEmpleado().Actualizar(P,P2);
             }
             catch (Exception e)
             {
@@ -47,7 +47,7 @@ namespace BL
                 throw e;
             }
         }
-        public List<EMPLEADO> Leer()
+        public dynamic Leer()
         {
             try
             {
@@ -60,7 +60,7 @@ namespace BL
             }
 
         }
-        public EMPLEADO GetById(int CEmpleado)
+        public dynamic GetById(int CEmpleado)
         {
             try
             {

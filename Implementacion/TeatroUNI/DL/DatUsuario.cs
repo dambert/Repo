@@ -64,13 +64,18 @@ namespace DL
             }
 
         }
-        public List<USUARIO> Leer()
+        public dynamic Leer()
         {
             try
             {
                 ContextoDB ct = new ContextoDB();
 
-                return ct.USUARIO.ToList();
+                var usuarios = (from s in ct.USUARIO
+                                join sa in ct.EMPLEADO on s.CUsuario equals sa.CEmpleado
+                                join so in ct.CLIENTE on s.CUsuario equals so.CCliente
+                                select s).ToList();
+
+                return usuarios;
             }
             catch (Exception ex)
             {
@@ -81,6 +86,7 @@ namespace DL
 
 
         }
+        /*
         public USUARIO GetById(int CUsuario)
         {
             try
@@ -97,6 +103,6 @@ namespace DL
             }
 
 
-        }
+        }*/
     }
 }

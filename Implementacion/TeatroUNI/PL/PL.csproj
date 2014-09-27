@@ -52,11 +52,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cliente\CActualizar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cliente\CActualizar.Designer.cs">
+      <DependentUpon>CActualizar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cliente\CAgregar.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Cliente\CAgregar.Designer.cs">
       <DependentUpon>CAgregar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente\CEliminar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cliente\CEliminar.Designer.cs">
+      <DependentUpon>CEliminar.cs</DependentUpon>
     </Compile>
     <Compile Include="Cliente\CListar.cs">
       <SubType>Form</SubType>
@@ -64,11 +76,23 @@
     <Compile Include="Cliente\CListar.Designer.cs">
       <DependentUpon>CListar.cs</DependentUpon>
     </Compile>
+    <Compile Include="Empleado\EActualizar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Empleado\EActualizar.Designer.cs">
+      <DependentUpon>EActualizar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Empleado\EAgregar.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Empleado\EAgregar.Designer.cs">
       <DependentUpon>EAgregar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Empleado\EEliminar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Empleado\EEliminar.Designer.cs">
+      <DependentUpon>EEliminar.cs</DependentUpon>
     </Compile>
     <Compile Include="Empleado\EListar.cs">
       <SubType>Form</SubType>
@@ -76,11 +100,29 @@
     <Compile Include="Empleado\EListar.Designer.cs">
       <DependentUpon>EListar.cs</DependentUpon>
     </Compile>
+    <Compile Include="Eventos\ActualizarEvento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eventos\ActualizarEvento.Designer.cs">
+      <DependentUpon>ActualizarEvento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Eventos\AgregarEvento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eventos\AgregarEvento.Designer.cs">
+      <DependentUpon>AgregarEvento.cs</DependentUpon>
+    </Compile>
     <Compile Include="Eventos\ConsultarEvento.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Eventos\ConsultarEvento.Designer.cs">
       <DependentUpon>ConsultarEvento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Eventos\EliminarEvento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eventos\EliminarEvento.Designer.cs">
+      <DependentUpon>EliminarEvento.cs</DependentUpon>
     </Compile>
     <Compile Include="Principal.cs">
       <SubType>Form</SubType>
@@ -96,10 +138,28 @@
     <Compile Include="UPCTicket.Designer.cs">
       <DependentUpon>UPCTicket.cs</DependentUpon>
     </Compile>
-    <Compile Include="Cajero\Vender.cs">
+    <Compile Include="Venta\VActualizar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Cajero\Vender.Designer.cs">
+    <Compile Include="Venta\VActualizar.Designer.cs">
+      <DependentUpon>VActualizar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Venta\VBuscar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Venta\VBuscar.Designer.cs">
+      <DependentUpon>VBuscar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Venta\VEliminar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Venta\VEliminar.Designer.cs">
+      <DependentUpon>VEliminar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Venta\Vender.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Venta\Vender.Designer.cs">
       <DependentUpon>Vender.cs</DependentUpon>
     </Compile>
     <Compile Include="UPCTicket2.cs">
@@ -139,7 +199,16 @@
     <EmbeddedResource Include="UPCTicket.resx">
       <DependentUpon>UPCTicket.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Cajero\Vender.resx">
+    <EmbeddedResource Include="Venta\VActualizar.resx">
+      <DependentUpon>VActualizar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Venta\VBuscar.resx">
+      <DependentUpon>VBuscar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Venta\VEliminar.resx">
+      <DependentUpon>VEliminar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Venta\Vender.resx">
       <DependentUpon>Vender.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UPCTicket2.resx">
@@ -183,6 +252,9 @@
       <Project>{2362c950-1c67-4ed2-a20d-0e9febf6e7b7}</Project>
       <Name>MappingDB</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Butacas\nose_se_sabe.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

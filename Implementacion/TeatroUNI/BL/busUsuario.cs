@@ -65,7 +65,7 @@ namespace BL
 
 
         }
-        public USUARIO GetById(int CUsuario)
+        /*public dynamic GetById(int CUsuario)
         {
             try
             {
@@ -80,6 +80,6 @@ namespace BL
             }
 
 
-        }
+        }*/
     }
 }
