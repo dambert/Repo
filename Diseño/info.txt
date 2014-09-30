@@ -1,6 +1,0 @@
-Aqui va todo relacionado con el diseño, arquitectura de todo el proyecto.
-Diseño fisico/ logico de la base de datos con el diccionario respectivo.
-Aqui va las interfaces pero solo en mockups o bocetos .. INTERFACES FINALES EN ESTRUCTURA PERO NO! EN COLORES
-Diagrama de clases, componentes, despliege (UML).
-Patrones de diseño aplicados a nuestro desarrollo. 
-Arquitectura de nuestra aplicación.
