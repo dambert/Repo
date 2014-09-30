@@ -15,23 +15,25 @@ namespace PL.Cliente
         public CListar()
         {
             InitializeComponent();
-            Font font = new Font("Arial", 12.0f);
 
-            LabelNombre.Font = font;
-            label2.Font = font;
-
-            LabelNombre.BackColor = Color.Transparent;
-            label2.BackColor = Color.Transparent;
-
-
-            LabelNombre.Font = new System.Drawing.Font(LabelNombre.Font, FontStyle.Bold);
-            label2.Font = new System.Drawing.Font(label2.Font, FontStyle.Bold);
             
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void CListar_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbBusqueda_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            this.lblBusqueda.Text = this.cmbBusqueda.Text;
+
+            this.txtBusqueda.Enabled = true;
         }
     }
 }

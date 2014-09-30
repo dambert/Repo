@@ -1,6 +1,6 @@
 ﻿namespace PL
 {
-    partial class Principal
+    partial class Login
     {
         /// <summary>
         /// Variable del diseñador requerida.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();

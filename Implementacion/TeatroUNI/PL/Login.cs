@@ -10,9 +10,9 @@ using System.Windows.Forms;
 using BL;
 namespace PL
 {
-    public partial class Principal : Form
+    public partial class Login : Form
     {
-        public Principal()
+        public Login()
         {
             InitializeComponent();
             #region Imagen
@@ -57,7 +57,7 @@ namespace PL
         private void RunPrincipal()
         {
 
-            Principal pri = new Principal();
+            Login pri = new Login();
             pri.ShowDialog();
         }
         private void button1_Click(object sender, EventArgs e)

@@ -1,0 +1,589 @@
+
+			//FILA1
+            for (int i = 1; i <= 12; i++)
+            {
+                busAsiento objAsiento = new busAsiento();
+                ASIENTO objAsiento2 = new ASIENTO();
+                objAsiento2.Letra = "P";
+                objAsiento2.Numero = i;
+                objAsiento2.CTipoAsiento=7;
+                objAsiento.Insertar(objAsiento2);
+            }
+            for (int i = 13; i <= 33; i++)
+            {
+                busAsiento objAsiento = new busAsiento();
+                ASIENTO objAsiento2 = new ASIENTO();
+                objAsiento2.Letra = "P";
+                objAsiento2.Numero = i;
+                objAsiento2.CTipoAsiento = 6;
+                objAsiento.Insertar(objAsiento2);
+            }
+             for (int i = 34; i <= 45; i++)
+            {
+                busAsiento objAsiento = new busAsiento();
+                ASIENTO objAsiento2 = new ASIENTO();
+                objAsiento2.Letra = "P";
+                objAsiento2.Numero = i;
+                objAsiento2.CTipoAsiento = 7;
+                objAsiento.Insertar(objAsiento2);
+            }
+            //FILA2
+            for (int i = 1; i <= 13; i++)
+            {
+                busAsiento objAsiento = new busAsiento();
+                ASIENTO objAsiento2 = new ASIENTO();
+                objAsiento2.Letra = "O";
+                objAsiento2.Numero = i;
+                objAsiento2.CTipoAsiento=7;
+                objAsiento.Insertar(objAsiento2);
+            }
+            for (int i = 14; i <= 33; i++)
+            {
+                busAsiento objAsiento = new busAsiento();
+                ASIENTO objAsiento2 = new ASIENTO();
+                objAsiento2.Letra = "O";
+                objAsiento2.Numero = i;
+                objAsiento2.CTipoAsiento = 6;
+                objAsiento.Insertar(objAsiento2);
+            }
+             for (int i = 34; i <= 46; i++)
+            {
+                busAsiento objAsiento = new busAsiento();
+                ASIENTO objAsiento2 = new ASIENTO();
+                objAsiento2.Letra = "O";
+                objAsiento2.Numero = i;
+                objAsiento2.CTipoAsiento = 7;
+                objAsiento.Insertar(objAsiento2);
+            }
+            //FILA3
+             for (int i = 1; i <= 4; i++)
+            {
+                busAsiento objAsiento = new busAsiento();
+                ASIENTO objAsiento2 = new ASIENTO();
+                objAsiento2.Letra = "N";
+                objAsiento2.Numero = i;
+                objAsiento2.CTipoAsiento=6;
+                objAsiento.Insertar(objAsiento2);
+            }
+            for (int i = 5; i <= 42; i++)
+            {
+                busAsiento objAsiento = new busAsiento();
+                ASIENTO objAsiento2 = new ASIENTO();
+                objAsiento2.Letra = "N";
+                objAsiento2.Numero = i;
+                objAsiento2.CTipoAsiento = 5;
+                objAsiento.Insertar(objAsiento2);
+            }
+             for (int i = 43; i <= 46; i++)
+            {
+                busAsiento objAsiento = new busAsiento();
+                ASIENTO objAsiento2 = new ASIENTO();
+                objAsiento2.Letra = "N";
+                objAsiento2.Numero = i;
+                objAsiento2.CTipoAsiento = 6;
+                objAsiento.Insertar(objAsiento2);
+            }
+            //FILA4
+             for (int i = 1; i <= 3; i++)
+            {
+                busAsiento objAsiento = new busAsiento();
+                ASIENTO objAsiento2 = new ASIENTO();
+                objAsiento2.Letra = "M";
+                objAsiento2.Numero = i;
+                objAsiento2.CTipoAsiento=6;
+                objAsiento.Insertar(objAsiento2);
+            }
+            for (int i = 4; i <= 42; i++)
+            {
+                busAsiento objAsiento = new busAsiento();
+                ASIENTO objAsiento2 = new ASIENTO();
+                objAsiento2.Letra = "M";
+                objAsiento2.Numero = i;
+                objAsiento2.CTipoAsiento = 5;
+                objAsiento.Insertar(objAsiento2);
+            }
+             for (int i = 43; i <= 46; i++)
+            {
+                busAsiento objAsiento = new busAsiento();
+                ASIENTO objAsiento2 = new ASIENTO();
+                objAsiento2.Letra = "M";
+                objAsiento2.Numero = i;
+                objAsiento2.CTipoAsiento = 6;
+                objAsiento.Insertar(objAsiento2);
+            }
+            //FILA5
+
+            for (int i = 1; i <= 6; i++)
+            {
+                busAsiento objAsiento = new busAsiento();
+                ASIENTO objAsiento2 = new ASIENTO();
+                objAsiento2.Letra = "L";
+                objAsiento2.Numero = i;
+                objAsiento2.CTipoAsiento=6;
+                objAsiento.Insertar(objAsiento2);
+            }
+             for (int i = 7; i <=12; i++)
+            {
+                busAsiento objAsiento = new busAsiento();
+                ASIENTO objAsiento2 = new ASIENTO();
+                objAsiento2.Letra = "L";
+                objAsiento2.Numero = i;
+                objAsiento2.CTipoAsiento=5;
+                objAsiento.Insertar(objAsiento2);
+            }
+            for (int i = 13 ;i <= 16; i++)
+            {
+                busAsiento objAsiento = new busAsiento();
+                ASIENTO objAsiento2 = new ASIENTO();
+                objAsiento2.Letra = "L";
+                objAsiento2.Numero = i;
+                objAsiento2.CTipoAsiento = 4;
+                objAsiento.Insertar(objAsiento2);
+            }
+               for (int i = 17; i <=32; i++)
+            {
+                busAsiento objAsiento = new busAsiento();
+                ASIENTO objAsiento2 = new ASIENTO();
+                objAsiento2.Letra = "L";
+                objAsiento2.Numero = i;
+                objAsiento2.CTipoAsiento=5;
+                objAsiento.Insertar(objAsiento2);
+            }
+             for (int i =33 ;i <= 36; i++)
+            {
+                busAsiento objAsiento = new busAsiento();
+                ASIENTO objAsiento2 = new ASIENTO();
+                objAsiento2.Letra = "L";
+                objAsiento2.Numero = i;
+                objAsiento2.CTipoAsiento = 4;
+                objAsiento.Insertar(objAsiento2);
+            }
+             for (int i = 37; i <= 41; i++)
+             {
+                 busAsiento objAsiento = new busAsiento();
+                 ASIENTO objAsiento2 = new ASIENTO();
+                 objAsiento2.Letra = "L";
+                 objAsiento2.Numero = i;
+                 objAsiento2.CTipoAsiento = 5;
+                 objAsiento.Insertar(objAsiento2);
+             }       
+            for (int i = 42; i <= 47; i++)
+            {
+                busAsiento objAsiento = new busAsiento();
+                ASIENTO objAsiento2 = new ASIENTO();
+                objAsiento2.Letra = "L";
+                objAsiento2.Numero = i;
+                objAsiento2.CTipoAsiento=6;
+                objAsiento.Insertar(objAsiento2);
+            }
+            //FILA6
+
+            for (int i = 1; i <= 4; i++)
+            {
+                busAsiento objAsiento = new busAsiento();
+                ASIENTO objAsiento2 = new ASIENTO();
+                objAsiento2.Letra = "K";
+                objAsiento2.Numero = i;
+                objAsiento2.CTipoAsiento=6;
+                objAsiento.Insertar(objAsiento2);
+            }
+             for (int i = 5; i <=9; i++)
+            {
+                busAsiento objAsiento = new busAsiento();
+                ASIENTO objAsiento2 = new ASIENTO();
+                objAsiento2.Letra = "K";
+                objAsiento2.Numero = i;
+                objAsiento2.CTipoAsiento=5;
+                objAsiento.Insertar(objAsiento2);
+            }
+            for (int i = 10 ;i <= 38; i++)
+            {
+                busAsiento objAsiento = new busAsiento();
+                ASIENTO objAsiento2 = new ASIENTO();
+                objAsiento2.Letra = "K";
+                objAsiento2.Numero = i;
+                objAsiento2.CTipoAsiento = 4;
+                objAsiento.Insertar(objAsiento2);
+            }
+             
+             for (int i = 39; i <= 43; i++)
+             {
+                 busAsiento objAsiento = new busAsiento();
+                 ASIENTO objAsiento2 = new ASIENTO();
+                 objAsiento2.Letra = "K";
+                 objAsiento2.Numero = i;
+                 objAsiento2.CTipoAsiento = 5;
+                 objAsiento.Insertar(objAsiento2);
+             }       
+            for (int i = 44; i <= 47; i++)
+            {
+                busAsiento objAsiento = new busAsiento();
+                ASIENTO objAsiento2 = new ASIENTO();
+                objAsiento2.Letra = "K";
+                objAsiento2.Numero = i;
+                objAsiento2.CTipoAsiento=6;
+                objAsiento.Insertar(objAsiento2);
+            }
+            //FILA7
+
+            for (int i = 1; i <= 3; i++)
+            {
+                busAsiento objAsiento = new busAsiento();
+                ASIENTO objAsiento2 = new ASIENTO();
+                objAsiento2.Letra = "J";
+                objAsiento2.Numero = i;
+                objAsiento2.CTipoAsiento=6;
+                objAsiento.Insertar(objAsiento2);
+            }
+             for (int i = 4; i <=10; i++)
+            {
+                busAsiento objAsiento = new busAsiento();
+                ASIENTO objAsiento2 = new ASIENTO();
+                objAsiento2.Letra = "J";
+                objAsiento2.Numero = i;
+                objAsiento2.CTipoAsiento=5;
+                objAsiento.Insertar(objAsiento2);
+            }
+            for (int i = 11 ;i <= 35; i++)
+            {
+                busAsiento objAsiento = new busAsiento();
+                ASIENTO objAsiento2 = new ASIENTO();
+                objAsiento2.Letra = "J";
+                objAsiento2.Numero = i;
+                objAsiento2.CTipoAsiento = 4;
+                objAsiento.Insertar(objAsiento2);
+            }
+             
+             for (int i = 36; i <= 45; i++)
+             {
+                 busAsiento objAsiento = new busAsiento();
+                 ASIENTO objAsiento2 = new ASIENTO();
+                 objAsiento2.Letra = "J";
+                 objAsiento2.Numero = i;
+                 objAsiento2.CTipoAsiento = 5;
+                 objAsiento.Insertar(objAsiento2);
+             }       
+            for (int i = 46; i <= 48; i++)
+            {
+                busAsiento objAsiento = new busAsiento();
+                ASIENTO objAsiento2 = new ASIENTO();
+                objAsiento2.Letra = "J";
+                objAsiento2.Numero = i;
+                objAsiento2.CTipoAsiento=6;
+                objAsiento.Insertar(objAsiento2);
+            }        
+            //FILA8
+
+             for (int i = 1; i <=9; i++)
+            {
+                busAsiento objAsiento = new busAsiento();
+                ASIENTO objAsiento2 = new ASIENTO();
+                objAsiento2.Letra = "I";
+                objAsiento2.Numero = i;
+                objAsiento2.CTipoAsiento=5;
+                objAsiento.Insertar(objAsiento2);
+            }
+            for (int i = 10 ;i <= 38; i++)
+            {
+                busAsiento objAsiento = new busAsiento();
+                ASIENTO objAsiento2 = new ASIENTO();
+                objAsiento2.Letra = "I";
+                objAsiento2.Numero = i;
+                objAsiento2.CTipoAsiento = 4;
+                objAsiento.Insertar(objAsiento2);
+            }
+             
+             for (int i = 39; i <= 47; i++)
+             {
+                 busAsiento objAsiento = new busAsiento();
+                 ASIENTO objAsiento2 = new ASIENTO();
+                 objAsiento2.Letra = "I";
+                 objAsiento2.Numero = i;
+                 objAsiento2.CTipoAsiento = 5;
+                 objAsiento.Insertar(objAsiento2);
+             }    
+             //FILA9
+             for (int i = 1; i <=4; i++)
+            {
+                busAsiento objAsiento = new busAsiento();
+                ASIENTO objAsiento2 = new ASIENTO();
+                objAsiento2.Letra = "H";
+                objAsiento2.Numero = i;
+                objAsiento2.CTipoAsiento=5;
+                objAsiento.Insertar(objAsiento2);
+            }
+            for (int i = 5 ;i <= 41; i++)
+            {
+                busAsiento objAsiento = new busAsiento();
+                ASIENTO objAsiento2 = new ASIENTO();
+                objAsiento2.Letra = "H";
+                objAsiento2.Numero = i;
+                objAsiento2.CTipoAsiento = 4;
+                objAsiento.Insertar(objAsiento2);
+            }
+             
+             for (int i = 42; i <= 48; i++)
+             {
+                 busAsiento objAsiento = new busAsiento();
+                 ASIENTO objAsiento2 = new ASIENTO();
+                 objAsiento2.Letra = "H";
+                 objAsiento2.Numero = i;
+                 objAsiento2.CTipoAsiento = 5;
+                 objAsiento.Insertar(objAsiento2);
+             }    
+             //FIL10
+              for (int i = 1; i <=4; i++)
+            {
+                busAsiento objAsiento = new busAsiento();
+                ASIENTO objAsiento2 = new ASIENTO();
+                objAsiento2.Letra = "G";
+                objAsiento2.Numero = i;
+                objAsiento2.CTipoAsiento=5;
+                objAsiento.Insertar(objAsiento2);
+            }
+            for (int i = 5 ;i <= 41; i++)
+            {
+                busAsiento objAsiento = new busAsiento();
+                ASIENTO objAsiento2 = new ASIENTO();
+                objAsiento2.Letra = "G";
+                objAsiento2.Numero = i;
+                objAsiento2.CTipoAsiento = 4;
+                objAsiento.Insertar(objAsiento2);
+            }
+             
+             for (int i = 42; i <= 47; i++)
+             {
+                 busAsiento objAsiento = new busAsiento();
+                 ASIENTO objAsiento2 = new ASIENTO();
+                 objAsiento2.Letra = "G";
+                 objAsiento2.Numero = i;
+                 objAsiento2.CTipoAsiento = 5;
+                 objAsiento.Insertar(objAsiento2);
+             }  
+             //FILA11
+
+            for (int i = 1; i <= 5; i++)
+            {
+                busAsiento objAsiento = new busAsiento();
+                ASIENTO objAsiento2 = new ASIENTO();
+                objAsiento2.Letra = "F";
+                objAsiento2.Numero = i;
+                objAsiento2.CTipoAsiento=5;
+                objAsiento.Insertar(objAsiento2);
+            }
+             for (int i = 6; i <=10; i++)
+            {
+                busAsiento objAsiento = new busAsiento();
+                ASIENTO objAsiento2 = new ASIENTO();
+                objAsiento2.Letra = "F";
+                objAsiento2.Numero = i;
+                objAsiento2.CTipoAsiento=4;
+                objAsiento.Insertar(objAsiento2);
+            }
+            for (int i = 11 ;i <= 37; i++)
+            {
+                busAsiento objAsiento = new busAsiento();
+                ASIENTO objAsiento2 = new ASIENTO();
+                objAsiento2.Letra = "F";
+                objAsiento2.Numero = i;
+                objAsiento2.CTipoAsiento = 3;
+                objAsiento.Insertar(objAsiento2);
+            }
+             
+             for (int i = 38; i <= 42; i++)
+             {
+                 busAsiento objAsiento = new busAsiento();
+                 ASIENTO objAsiento2 = new ASIENTO();
+                 objAsiento2.Letra = "F";
+                 objAsiento2.Numero = i;
+                 objAsiento2.CTipoAsiento = 4;
+                 objAsiento.Insertar(objAsiento2);
+             }       
+            for (int i = 43; i <= 48; i++)
+            {
+                busAsiento objAsiento = new busAsiento();
+                ASIENTO objAsiento2 = new ASIENTO();
+                objAsiento2.Letra = "F";
+                objAsiento2.Numero = i;
+                objAsiento2.CTipoAsiento=5;
+                objAsiento.Insertar(objAsiento2);
+            }
+            //FILA12
+            for (int i = 1; i <= 5; i++)
+            {
+                busAsiento objAsiento = new busAsiento();
+                ASIENTO objAsiento2 = new ASIENTO();
+                objAsiento2.Letra = "E";
+                objAsiento2.Numero = i;
+                objAsiento2.CTipoAsiento=5;
+                objAsiento.Insertar(objAsiento2);
+            }
+             for (int i = 6; i <=10; i++)
+            {
+                busAsiento objAsiento = new busAsiento();
+                ASIENTO objAsiento2 = new ASIENTO();
+                objAsiento2.Letra = "E";
+                objAsiento2.Numero = i;
+                objAsiento2.CTipoAsiento=4;
+                objAsiento.Insertar(objAsiento2);
+            }
+            for (int i = 11 ;i <= 35; i++)
+            {
+                busAsiento objAsiento = new busAsiento();
+                ASIENTO objAsiento2 = new ASIENTO();
+                objAsiento2.Letra = "E";
+                objAsiento2.Numero = i;
+                objAsiento2.CTipoAsiento = 3;
+                objAsiento.Insertar(objAsiento2);
+            }
+             
+             for (int i = 36; i <= 40; i++)
+             {
+                 busAsiento objAsiento = new busAsiento();
+                 ASIENTO objAsiento2 = new ASIENTO();
+                 objAsiento2.Letra = "E";
+                 objAsiento2.Numero = i;
+                 objAsiento2.CTipoAsiento = 4;
+                 objAsiento.Insertar(objAsiento2);
+             }       
+            for (int i = 41; i <= 45; i++)
+            {
+                busAsiento objAsiento = new busAsiento();
+                ASIENTO objAsiento2 = new ASIENTO();
+                objAsiento2.Letra = "E";
+                objAsiento2.Numero = i;
+                objAsiento2.CTipoAsiento=5;
+                objAsiento.Insertar(objAsiento2);
+            }
+            //FILA13
+            for (int i = 1; i <= 8; i++)
+            {
+                busAsiento objAsiento = new busAsiento();
+                ASIENTO objAsiento2 = new ASIENTO();
+                objAsiento2.Letra = "D";
+                objAsiento2.Numero = i;
+                objAsiento2.CTipoAsiento=3;
+                objAsiento.Insertar(objAsiento2);
+            }
+            for (int i = 9; i <= 33; i++)
+            {
+                busAsiento objAsiento = new busAsiento();
+                ASIENTO objAsiento2 = new ASIENTO();
+                objAsiento2.Letra = "D";
+                objAsiento2.Numero = i;
+                objAsiento2.CTipoAsiento = 2;
+                objAsiento.Insertar(objAsiento2);
+            }
+             for (int i = 34; i <= 45; i++)
+            {
+                busAsiento objAsiento = new busAsiento();
+                ASIENTO objAsiento2 = new ASIENTO();
+                objAsiento2.Letra = "D";
+                objAsiento2.Numero = i;
+                objAsiento2.CTipoAsiento = 3;
+                objAsiento.Insertar(objAsiento2);
+            }
+            //fila14
+               for (int i = 1; i <= 6; i++)
+            {
+                busAsiento objAsiento = new busAsiento();
+                ASIENTO objAsiento2 = new ASIENTO();
+                objAsiento2.Letra = "C";
+                objAsiento2.Numero = i;
+                objAsiento2.CTipoAsiento=3;
+                objAsiento.Insertar(objAsiento2);
+            }
+            for (int i = 7; i <= 29; i++)
+            {
+                busAsiento objAsiento = new busAsiento();
+                ASIENTO objAsiento2 = new ASIENTO();
+                objAsiento2.Letra = "C";
+                objAsiento2.Numero = i;
+                objAsiento2.CTipoAsiento = 2;
+                objAsiento.Insertar(objAsiento2);
+            }
+             for (int i = 30; i <= 35; i++)
+            {
+                busAsiento objAsiento = new busAsiento();
+                ASIENTO objAsiento2 = new ASIENTO();
+                objAsiento2.Letra = "C";
+                objAsiento2.Numero = i;
+                objAsiento2.CTipoAsiento = 3;
+                objAsiento.Insertar(objAsiento2);
+            }   
+           //FILA15
+               for (int i = 1; i <= 3; i++)
+            {
+                busAsiento objAsiento = new busAsiento();
+                ASIENTO objAsiento2 = new ASIENTO();
+                objAsiento2.Letra = "B";
+                objAsiento2.Numero = i;
+                objAsiento2.CTipoAsiento=3;
+                objAsiento.Insertar(objAsiento2);
+            }
+            for (int i = 4; i <= 7; i++)
+            {
+                busAsiento objAsiento = new busAsiento();
+                ASIENTO objAsiento2 = new ASIENTO();
+                objAsiento2.Letra = "B";
+                objAsiento2.Numero = i;
+                objAsiento2.CTipoAsiento = 2;
+                objAsiento.Insertar(objAsiento2);
+            }
+             for (int i = 8; i <= 23; i++)
+            {
+                busAsiento objAsiento = new busAsiento();
+                ASIENTO objAsiento2 = new ASIENTO();
+                objAsiento2.Letra = "B";
+                objAsiento2.Numero = i;
+                objAsiento2.CTipoAsiento = 1;
+                objAsiento.Insertar(objAsiento2);
+            } 
+            for (int i = 24; i <= 27; i++)
+            {
+                busAsiento objAsiento = new busAsiento();
+                ASIENTO objAsiento2 = new ASIENTO();
+                objAsiento2.Letra = "B";
+                objAsiento2.Numero = i;
+                objAsiento2.CTipoAsiento = 2;
+                objAsiento.Insertar(objAsiento2);
+            }
+             for (int i = 28; i <= 30; i++)
+            {
+                busAsiento objAsiento = new busAsiento();
+                ASIENTO objAsiento2 = new ASIENTO();
+                objAsiento2.Letra = "B";
+                objAsiento2.Numero = i;
+                objAsiento2.CTipoAsiento = 3;
+                objAsiento.Insertar(objAsiento2);
+            } 
+
+
+           //FILA16      
+             for (int i = 1; i <= 6; i++)
+            {
+                busAsiento objAsiento = new busAsiento();
+                ASIENTO objAsiento2 = new ASIENTO();
+                objAsiento2.Letra = "A";
+                objAsiento2.Numero = i;
+                objAsiento2.CTipoAsiento=8;
+                objAsiento.Insertar(objAsiento2);
+            }
+            for (int i = 7; i <= 21; i++)
+            {
+                busAsiento objAsiento = new busAsiento();
+                ASIENTO objAsiento2 = new ASIENTO();
+                objAsiento2.Letra = "A";
+                objAsiento2.Numero = i;
+                objAsiento2.CTipoAsiento =1;
+                objAsiento.Insertar(objAsiento2);
+            }
+             for (int i = 22; i <= 27; i++)
+            {
+                busAsiento objAsiento = new busAsiento();
+                ASIENTO objAsiento2 = new ASIENTO();
+                objAsiento2.Letra = "A";
+                objAsiento2.Numero = i;
+                objAsiento2.CTipoAsiento = 2;
+                objAsiento.Insertar(objAsiento2);
+            } 

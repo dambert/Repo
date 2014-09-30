@@ -21,5 +21,10 @@ namespace PL.Eventos
         {
             this.Close();
         }
+
+        private void ConsultarEvento_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

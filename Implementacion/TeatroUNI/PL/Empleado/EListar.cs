@@ -16,18 +16,6 @@ namespace PL.Empleado
         {
             InitializeComponent();
 
-            Font font = new Font("Arial", 12.0f);
-
-            LabelNombre.Font = font;
-            label2.Font = font;
-
-            LabelNombre.BackColor = Color.Transparent;
-            label2.BackColor = Color.Transparent;
-
-
-            LabelNombre.Font = new System.Drawing.Font(LabelNombre.Font, FontStyle.Bold);
-            label2.Font = new System.Drawing.Font(label2.Font, FontStyle.Bold);
-            
 
         }
 

@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BL;
+using MappingDB;
 namespace PL
 {
     public partial class UPCTicket : Form
@@ -19,9 +20,11 @@ namespace PL
 
         private void UPCTicket_Load(object sender, EventArgs e)
         {
+            //EventoController objEventoC = new EventoController(this);
+            //objEventoC.CrearTodo();
+           /* AsientoButton objAsient = new AsientoButton();
+            objAsient.crearAsientoButton(this);*/
 
-            AsientoButton objAsient = new AsientoButton();
-            objAsient.crearAsientoButton(this);
         }
 
         private void ventasToolStripMenuItem_Click(object sender, EventArgs e)
@@ -65,7 +68,7 @@ namespace PL
             
             this.Close();
             this.Hide();
-            Principal logion = new Principal();
+            Login logion = new Login();
             logion.ShowDialog();
         }
 
@@ -73,6 +76,11 @@ namespace PL
         {
             Eventos.ConsultarEvento frmConsultarEvento = new Eventos.ConsultarEvento();
             frmConsultarEvento.ShowDialog();
+        }
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
