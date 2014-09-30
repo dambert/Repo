@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{053DAB67-BB04-4568-87DB-D8CAE0539946}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PL</RootNamespace>
+    <AssemblyName>PL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cliente\CActualizar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cliente\CActualizar.Designer.cs">
+      <DependentUpon>CActualizar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente\CAgregar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cliente\CAgregar.Designer.cs">
+      <DependentUpon>CAgregar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente\CEliminar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cliente\CEliminar.Designer.cs">
+      <DependentUpon>CEliminar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente\CListar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cliente\CListar.Designer.cs">
+      <DependentUpon>CListar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Empleado\EActualizar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Empleado\EActualizar.Designer.cs">
+      <DependentUpon>EActualizar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Empleado\EAgregar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Empleado\EAgregar.Designer.cs">
+      <DependentUpon>EAgregar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Empleado\EEliminar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Empleado\EEliminar.Designer.cs">
+      <DependentUpon>EEliminar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Empleado\EListar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Empleado\EListar.Designer.cs">
+      <DependentUpon>EListar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Eventos\ActualizarEvento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eventos\ActualizarEvento.Designer.cs">
+      <DependentUpon>ActualizarEvento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Eventos\AgregarEvento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eventos\AgregarEvento.Designer.cs">
+      <DependentUpon>AgregarEvento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Eventos\ConsultarEvento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eventos\ConsultarEvento.Designer.cs">
+      <DependentUpon>ConsultarEvento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Eventos\EliminarEvento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eventos\EliminarEvento.Designer.cs">
+      <DependentUpon>EliminarEvento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UPCTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UPCTicket.Designer.cs">
+      <DependentUpon>UPCTicket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Venta\VActualizar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Venta\VActualizar.Designer.cs">
+      <DependentUpon>VActualizar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Venta\VBuscar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Venta\VBuscar.Designer.cs">
+      <DependentUpon>VBuscar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Venta\VEliminar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Venta\VEliminar.Designer.cs">
+      <DependentUpon>VEliminar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Venta\Vender.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Venta\Vender.Designer.cs">
+      <DependentUpon>Vender.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UPCTicket2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UPCTicket2.Designer.cs">
+      <DependentUpon>UPCTicket2.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Cliente\CActualizar.resx">
+      <DependentUpon>CActualizar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cliente\CAgregar.resx">
+      <DependentUpon>CAgregar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cliente\CEliminar.resx">
+      <DependentUpon>CEliminar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cliente\CListar.resx">
+      <DependentUpon>CListar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Empleado\EAgregar.resx">
+      <DependentUpon>EAgregar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Empleado\EListar.resx">
+      <DependentUpon>EListar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eventos\ConsultarEvento.resx">
+      <DependentUpon>ConsultarEvento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UPCTicket.resx">
+      <DependentUpon>UPCTicket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Venta\VActualizar.resx">
+      <DependentUpon>VActualizar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Venta\VBuscar.resx">
+      <DependentUpon>VBuscar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Venta\VEliminar.resx">
+      <DependentUpon>VEliminar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Venta\Vender.resx">
+      <DependentUpon>Vender.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UPCTicket2.resx">
+      <DependentUpon>UPCTicket2.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\fondo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ticket.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\check.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\teatro.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BL\BL.csproj">
+      <Project>{1e7eb62b-3ad2-487b-b507-645dca67e6cf}</Project>
+      <Name>BL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MappingDB\MappingDB.csproj">
+      <Project>{2362c950-1c67-4ed2-a20d-0e9febf6e7b7}</Project>
+      <Name>MappingDB</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Butacas\nose_se_sabe.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

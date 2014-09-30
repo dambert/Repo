@@ -1,0 +1,4 @@
+Pruebas con hudson ( herramienta para compilar, ejecutar y desplegar aplicaciones de manera automática 
+para ello se realizan tareas  programables para realizar cada cierto tiempo) 
+Reportes con SONAR( herramienta para hacer reportes de los errores de nuestra aplicación, analiza 
+tiempo de ejecución y cositas que son importantes)
