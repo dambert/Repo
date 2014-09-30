@@ -168,8 +168,14 @@
     <Compile Include="UPCTicket2.Designer.cs">
       <DependentUpon>UPCTicket2.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Cliente\CActualizar.resx">
+      <DependentUpon>CActualizar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Cliente\CAgregar.resx">
       <DependentUpon>CAgregar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cliente\CEliminar.resx">
+      <DependentUpon>CEliminar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Cliente\CListar.resx">
       <DependentUpon>CListar.cs</DependentUpon>

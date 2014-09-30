@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using BL;
 namespace PL
 {
     public partial class UPCTicket : Form
@@ -19,8 +19,9 @@ namespace PL
 
         private void UPCTicket_Load(object sender, EventArgs e)
         {
-           
-           
+
+            AsientoButton objAsient = new AsientoButton();
+            objAsient.crearAsientoButton(this);
         }
 
         private void ventasToolStripMenuItem_Click(object sender, EventArgs e)

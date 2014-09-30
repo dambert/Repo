@@ -16,5 +16,10 @@ namespace PL.Cliente
         {
             InitializeComponent();
         }
+
+        private void CEliminar_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

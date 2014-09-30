@@ -16,5 +16,10 @@ namespace PL.Cliente
         {
             InitializeComponent();
         }
+
+        private void CActualizar_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
