@@ -8,21 +8,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PL.Cliente
+namespace PL.Butacas
 {
-    public partial class CActualizar : Form
+    public partial class Asiento : Form
     {
-        public CActualizar()
+        public Asiento()
         {
             InitializeComponent();
         }
 
-        private void CActualizar_Load(object sender, EventArgs e)
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
+        private void radioButton4_CheckedChanged(object sender, EventArgs e)
         {
 
         }
