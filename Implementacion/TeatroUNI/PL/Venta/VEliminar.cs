@@ -16,5 +16,10 @@ namespace PL.Venta
         {
             InitializeComponent();
         }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("¿Desea eliminar venta seleccionada?", "Advertencia", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+        }
     }
 }
