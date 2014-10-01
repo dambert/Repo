@@ -59,6 +59,30 @@
     <Compile Include="ButacasxEvento\ButacasxEventoVenta.Designer.cs">
       <DependentUpon>ButacasxEventoVenta.cs</DependentUpon>
     </Compile>
+    <Compile Include="ButacasxEvento\Asiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ButacasxEvento\Asiento.Designer.cs">
+      <DependentUpon>Asiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente\CBuscarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cliente\CBuscarCliente.Designer.cs">
+      <DependentUpon>CBuscarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ButacasxEvento\CConfigurar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ButacasxEvento\CConfigurar.Designer.cs">
+      <DependentUpon>CConfigurar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ButacasxEvento\Pisos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ButacasxEvento\Pisos.Designer.cs">
+      <DependentUpon>Pisos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cliente\CActualizar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -177,6 +201,18 @@
     </Compile>
     <EmbeddedResource Include="ButacasxEvento\ButacasxEventoVenta.resx">
       <DependentUpon>ButacasxEventoVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ButacasxEvento\Asiento.resx">
+      <DependentUpon>Asiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cliente\CBuscarCliente.resx">
+      <DependentUpon>CBuscarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ButacasxEvento\CConfigurar.resx">
+      <DependentUpon>CConfigurar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ButacasxEvento\Pisos.resx">
+      <DependentUpon>Pisos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Cliente\CActualizar.resx">
       <DependentUpon>CActualizar.cs</DependentUpon>

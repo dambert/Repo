@@ -32,20 +32,20 @@
             this.buttonCancelar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.txtRUC = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtTelefono = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtCodigo = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtDNI = new System.Windows.Forms.TextBox();
             this.txtDireccion = new System.Windows.Forms.TextBox();
             this.txtApellidos = new System.Windows.Forms.TextBox();
             this.labelDNI = new System.Windows.Forms.Label();
             this.labelDireccion = new System.Windows.Forms.Label();
-            this.txtNombres = new System.Windows.Forms.TextBox();
             this.labelApellido = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.txtNombres = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -92,7 +92,7 @@
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.txtTelefono);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.textBox5);
+            this.groupBox1.Controls.Add(this.txtCodigo);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.txtDNI);
             this.groupBox1.Controls.Add(this.txtDireccion);
@@ -106,6 +106,17 @@
             this.groupBox1.Size = new System.Drawing.Size(299, 342);
             this.groupBox1.TabIndex = 17;
             this.groupBox1.TabStop = false;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label5.Location = new System.Drawing.Point(25, 67);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(53, 17);
+            this.label5.TabIndex = 31;
+            this.label5.Text = "Nombres:";
+            this.label5.UseCompatibleTextRendering = true;
             // 
             // txtRUC
             // 
@@ -143,13 +154,13 @@
             this.label3.Text = "Telefono:";
             this.label3.UseCompatibleTextRendering = true;
             // 
-            // textBox5
+            // txtCodigo
             // 
-            this.textBox5.Enabled = false;
-            this.textBox5.Location = new System.Drawing.Point(145, 19);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(139, 20);
-            this.textBox5.TabIndex = 26;
+            this.txtCodigo.Enabled = false;
+            this.txtCodigo.Location = new System.Drawing.Point(145, 19);
+            this.txtCodigo.Name = "txtCodigo";
+            this.txtCodigo.Size = new System.Drawing.Size(139, 20);
+            this.txtCodigo.TabIndex = 26;
             // 
             // label2
             // 
@@ -205,13 +216,6 @@
             this.labelDireccion.TabIndex = 20;
             this.labelDireccion.Text = "Dirección :";
             // 
-            // txtNombres
-            // 
-            this.txtNombres.Location = new System.Drawing.Point(145, 64);
-            this.txtNombres.Name = "txtNombres";
-            this.txtNombres.Size = new System.Drawing.Size(139, 20);
-            this.txtNombres.TabIndex = 18;
-            // 
             // labelApellido
             // 
             this.labelApellido.AutoSize = true;
@@ -223,16 +227,12 @@
             this.labelApellido.Text = "Apellidos :";
             this.labelApellido.UseCompatibleTextRendering = true;
             // 
-            // label5
+            // txtNombres
             // 
-            this.label5.AutoSize = true;
-            this.label5.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label5.Location = new System.Drawing.Point(25, 67);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(53, 17);
-            this.label5.TabIndex = 31;
-            this.label5.Text = "Nombres:";
-            this.label5.UseCompatibleTextRendering = true;
+            this.txtNombres.Location = new System.Drawing.Point(145, 64);
+            this.txtNombres.Name = "txtNombres";
+            this.txtNombres.Size = new System.Drawing.Size(139, 20);
+            this.txtNombres.TabIndex = 18;
             // 
             // CAgregar
             // 
@@ -263,7 +263,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtTelefono;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtCodigo;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtDNI;
         private System.Windows.Forms.TextBox txtDireccion;
